@@ -1,3 +1,4 @@
+1. RSA Factoring Challenge
 #!/usr/bin/python3
 import sys
 import random
@@ -15,7 +16,7 @@ def is_prime(num, k=20):
 
     d = num - 1
     r = 0
-        
+
         while d % 2 == 0:
             d //= 2
             r += 1
@@ -24,7 +25,7 @@ def is_prime(num, k=20):
             a= random.randint(2, num - 2)
             k= pow(a, d, num)
             if x == 1 or x == num - 1:
-                continue
+ continue
             for _ in range(r - 1):
                 x = pow(x, 2, num)
 
@@ -50,7 +51,7 @@ def is_prime(num, k=20):
             exit()
 
             start_time = time.time()
-            num = int(lines[0].strip())
+ num = int(lines[0].strip())
 
             for i in range(2, num//2):
                 if num % i == 0 and is_prime(i) and is_prime(num//i):
@@ -60,6 +61,3 @@ def is_prime(num, k=20):
                 if time.time() - start_time>5:
                     print("Time limit exceeded")
                     exit()
-
-
-

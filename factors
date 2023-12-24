@@ -2,7 +2,7 @@
 """Module that factorize as many numbers as possible
  into a product of two smaller numbers."""
 
-import sys 
+import sys
 import time
 
 def factorize(num):
@@ -24,7 +24,7 @@ def factorize(num):
         """reads the input file."""
 
         if len(sys.argv) != 2:
-            print("usage: factors <file">)
+ print("usage: factors <file">)
             exit()
     input_file = sys.argv[1]
     try:
@@ -50,4 +50,4 @@ def factorize(num):
 
            if time.time() - start_time>5:
                print("Time limit exceeded")
-               exit()
+exit()
