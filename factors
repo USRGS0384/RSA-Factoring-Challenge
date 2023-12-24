@@ -24,7 +24,7 @@ def factorize(num):
         """reads the input file."""
 
         if len(sys.argv) != 2:
- print("usage: factors <file">)
+ print("usage: factors <file>")
             exit()
     input_file = sys.argv[1]
     try:
