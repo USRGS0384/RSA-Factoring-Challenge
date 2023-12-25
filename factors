@@ -11,13 +11,13 @@ def factor_number(n):
             print(f"{n}={i}*{n // i}")  # Multiply factors by 2
             break
 
-def main():
-    """Reads numbers from a list and factors each one."""
-    if len(sys.argv) == 2:
-        with open(sys.argv[1], "r") as file:
-            numbers = [int(line) for line in file]
-        for number in numbers:
-            factor_number(number)
+def fac_list(ls):
+    """factor each
+    num in ls
+    """
+    for i in ls:
+        find_and_times(i)
 
-if __name__ == "__main__":
-    main()
+
+if len(argv) == 2:
+    fac_list(open_read_file(argv[1]))
